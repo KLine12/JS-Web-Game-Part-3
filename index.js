@@ -7,24 +7,21 @@ function newImage(url){
 
 function move(image){
     image.style.position = 'fixed'
-    image.style.left = left + 'px'
-    image.style.bottom = bottom + 'px'
-
+    
     function moveToCoordinates(left, bottom){
+        image.style.left = left + 'px'
+        image.style.bottom = bottom + 'px'
     }
 }
-
 
 function move(image, left, bottom){
     image.style.position = 'fixed'
     image.style.left = left + 'px'
     image.style.bottom = bottom + 'px'
-
 }
 
 let greenCharacter = newImage('assets/green-character.gif')
-move(greenCharacter, 100, 250)
-
+move(greenCharacter, 50, 250)
 
 
 newImage('assets/green-character.gif', 100, 250)
